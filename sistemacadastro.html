@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sistemacadastro.css" media="">
+    <title>Sistema Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro de Produtos</h1>
+        <p id="subtitulo">Insira as Informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="grupo">
+                <label for="nome"><strong>Nome do Produto</strong></label><br>
+                <input type="text" name="Nome" id="nome" required>
+            </div>
+
+            <div class="grupo">
+                <label for="descrição"><strong>Descrição do produto</strong></label><br>
+                <input type="text" name="Descrição" id="Descrição" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="serial"><strong>Numero Serial</strong></label>
+            <input type="serial" name="serial" id="serial" required>
+        </div>
+
+        <div>
+            <label><strong>Tipo Produto</strong></label>
+            <label>
+                <input type="radio" name="tipo" value="Peça" checked>Peça
+            </label>
+            <label>
+                <input type="radio" name="tipo" value="Acessório">Acessório
+            </label>
+        </div>
+
+        <div>
+            <label>Categoria</label>
+            <select id="categoria">
+                <option selected disabled value="">Selecione</option>
+                <option>Homem</option>
+                <option>Mulher</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div id="check">
+                <label for="produtos a adicionar">Selecione os Produtos a adicionar</label>
+                <input type="checkbox" id="categoria" name="Capacetes" value="Capacete">
+                <label for="Capacetes">Capacetes</label>
+                <input type="checkbox" id="categoria" name="Luvas" value="Luva">
+                <label for="Luvas">Luvas</label>
+                <input type="checkbox" id="categoria" name="Viseiras" value="Viseira">
+                <label for="Viseiras">Viseiras</label>
+            </div>
+        </fieldset>
+        <div>
+            <br>
+            <label>Observação</label>
+            <textarea row="6" style="width: 26em" id="descrição" name="descrição"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluir</button>
+    </form>
+    
+</body>
+</html>
+
